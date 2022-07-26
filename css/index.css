@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+.inner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* Header 구역 */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+#header h1 {
+    width: 184px;
+    position: absolute;
+    padding: 32px 0;
+}
+#nav {
+    float: right;
+    padding-top: 32px;
+}
+#nav .depth1 > li {
+    float: left;
+    position: relative;
+}
+#nav .depth1 > li > a {
+    font-size: 16px;
+    color: #374785;
+    padding: 8px 27px;
+}
+#nav .depth1 > li > a::after {
+    content: '\f107';
+    font-family:'Font Awesome 5 Free';
+    font-weight: 900 !important;
+    margin-left: 10px;
+}
+#nav .depth1 > li:hover > a::after {
+    content: '\f106';
+    font-family:'Font Awesome 5 Free';
+    font-weight: 900 !important;
+    margin-left: 10px;
+}
+#nav .depth1 > li:first-child > a::after,
+#nav .depth1 > li:last-child > a::after {
+    display: none;
+}
+#nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 160px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.1);
+    padding: 8px 0;
+    display: none;
+}
+#nav .depth1 > li:hover .depth2 {
+    display: block;
+}
+#nav .depth2 li a {
+    font-size: 14px;
+    padding: 8px 16px;
+    color: #9a9aa0;
+    display: block;
+}
+#nav .depth2 li:hover a{
+    color: #374785;
+    background: #e7e7f9;
+}
+
+/* Section 구역 */
+.article1 {
+    padding: 104px 0 62px 0;
+    background: #eef5fc;
+}
+.article1 .inner {
+    background: url(../images/mainbanner.png) no-repeat;
+    background-size: 520px;
+    height: 420px;
+    margin-top: 62px;
+    
+}
+.article1 .slogun {
+    float: right;
+    width: 50%;
+}
+.article1 .slogun h2 {
+    font-size: 29px;
+    color: #2e2e2e;
+    padding-bottom: 40px;
+}
+.article1 .slogun p {
+    font-size: 18px;
+    color: #505050;
+    padding-bottom: 245px;
+}
+
+.article2 {
+    padding: 50px 0;
+}
+.article2 h2 {
+    font-size: 30px;
+    color: #282866;
+    text-align: center;
+}
+.article2 ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 30px 0 0 10px;
+}
+.article2 ul li:last-child {
+    padding: 30px 10px 0;
+}
+.article2 .icon {
+    font-size: 30px;
+    color: #282866;
+}
+.article2 h3 {
+    font-size: 19px;
+    color: #282866;
+    padding: 20px 0 14px;
+}
+.article2 p {
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.article3 {
+    padding-top: 50px;
+}
+.article3 h2 {
+    font-size: 30px;
+    color: #282866;
+    text-align: center;
+}
+.article3 li img {
+    padding: 30px 0 20px 20px;
+}
+.article3 ul li {
+    float: left;
+    width: 33.33%;
+}
+.article3 h3 {
+    font-size: 18px;
+    color: #2e2e2e;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.article4 {
+    margin: 0 auto;
+}
+.article4 > div {
+    background: url(../images/videobanner.png) no-repeat center;
+    background-size: cover;
+    height: 480px;
+    margin-top: 385px;
+    position: relative;
+}
+.article4 .icon {
+    padding: 240px 0;
+}
+.article4 .icon i {
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    text-align: center;
+    line-height: 3.2em;
+}
+
+.article5 h2 {
+    font-size: 30px;
+    color: #282866;
+    padding: 50px 0 30px;
+    text-align: center;
+}
+.article5 ul li {
+    float: left;
+    width: 33.33%;
+    padding-left: 20px;
+}
+.article5 ul li:last-child {
+    padding-right: 20px;
+}
+.article5 img {
+    padding: 0 0 20px 20px;
+}
+.article5 h3 {
+    font-size: 18px;
+    color: #2e2e2e;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.article6 {
+    background-color: #eef5fc;
+    height: 411px;
+}
+.article6 .inner {
+    background: url(../images/subbanner.png) no-repeat;
+    background-size: 500px;
+    height: 411px;
+    background-position: 100% 50%;
+}
+.article6 > div > div {
+    margin: 130px 0;
+    float: left;
+    width: 50%;
+}
+.article6 h2 {
+    font-size: 36px;
+    color: #2e2e2e;
+    padding-bottom: 40px;
+}
+.article6 p {
+    font-size: 16px;
+    color: #505050;
+}
+
+/* Footer 구역 */
+#footer {
+    background: #282866;
+    height: 282px;
+    position: relative;
+}
+#footer .inner {
+    position: absolute;
+    left: 37%;
+    top: 0%;
+}
+#footer ul li {
+    float: left;
+    padding: 75px 0 50px 45px;
+}
+#footer ul li i {
+    color: #282866;
+    font-size: 30px;
+    line-height: 2em; 
+    border: 1px solid #fff;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+}
+
+#footer .contact {
+    font-size: 16px;
+    color: #e3e3e3;
+}
