@@ -253,8 +253,10 @@
     text-align: center;
     background: #fff;
 }
-
 #footer .contact {
     font-size: 16px;
     color: #e3e3e3;
+}
+#footer .contact a {
+    margin: 0 15px;
 }
